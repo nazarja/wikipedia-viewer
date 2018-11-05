@@ -1,0 +1,49 @@
+<!doctype html>
+	<html>
+		<head>
+			<meta charset="utf-8" lang="eng">
+			<meta name="viewport" content="width=device-width,initial-scale=1">
+			<title>Wikipedia Viewer</title>
+			<link rel="stylesheet" href="style.css">
+		</head>
+
+		<!-- Start of Body -->
+		<body>
+			<div class="wrapper">
+				<header>
+					<div class="logo-div">
+					<img class="wiki-icon" src="http://seanmurphy.eu/wikipedia-viewer/wiki-icon.png" alt="wikipedia icon">
+					<h1 id="text-logo">Wikipedia Viewer</h1>
+					<p class="slogan">Search Wikipedia for an article or a random page</p>
+					</div>
+
+					<div class="search-div">
+					<input  id="search" type="text" placeholder="Search Wikipedia" autocomplete="off">
+					<button id="submit"><i class="fa fa-search"></i>  Search</button>
+					<button id="random"><i class="fa fa-random"></i>  Random</button>
+					</div>
+				</header>
+				
+				<div class="autocomplete-results">
+					<p class="auto-results" id="auto-results-1"></p>
+					<p class="auto-results" id="auto-results-2"></p>
+					<p class="auto-results" id="auto-results-3"></p>
+					<p class="auto-results" id="auto-results-4"></p>
+					<p class="auto-results" id="auto-results-5"></p>
+				</div>
+					
+				<div class="search-results">
+				</div>	
+					
+			</div>
+
+			<footer>
+			<p>Code and Design by - <a href="http://seanmurphy.eu" target="_blank">Sean Murphy</a> - 2017
+			</footer>
+
+			<!-- Start of JavaScript -->
+			<script src="https://use.fontawesome.com/9bad4b1133.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<script src="script.js"></script>
+		</body>
+	</html>

@@ -1,0 +1,199 @@
+/*****************************
+      Fonts
+*****************************/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+@font-face {
+    font-family: 'Deutsch Gothic';
+    src: url('https://rawgit.com/nazarja/fonts/master/deutsch-gothic.ttf') format('truetype');
+}
+
+/*****************************
+      General
+*****************************/
+body {
+    width: 960px;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #222;
+    background-color: #fdfdfd;
+}
+
+.wrapper {
+    min-height: calc(100vh - 80px); 
+}
+
+h1 {
+    font-family: 'Deutsch Gothic', cursive;
+    font-size: 60px;
+    font-weight: lighter;
+    display: inline-block;
+}
+
+a, a:active, a:focus,a :visited {
+    color: #3A6DC1;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+a:hover {
+    color: #213E6D;
+}
+
+footer p {
+    text-align: left;
+    font-size: 14px;
+    margin-left: 330px; 
+}
+
+/*****************************
+      Header
+*****************************/
+
+.logo-div {
+    padding-top: 25vh;
+    text-align: center;
+}
+
+.wiki-icon {
+    width: 80px;
+    height: 80px;
+    padding-right: 20px;
+    position: relative;
+    top: 10px;
+}
+
+#text-logo {
+    transition: 1s;
+}
+
+.slogan {
+    position: relative;
+    top: -50px;
+    left: 250px;
+    text-align: left;
+}
+
+/*****************************
+     Search Box
+*****************************/
+
+.search-div {
+    text-align: center;
+}
+
+input[type=text] {
+    height: 50px;
+    width: 500px;
+		position: relative;
+    border: 1px solid #A0A0A0;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    outline: 0;
+    transition: 0.4s;
+    z-index: 3;
+}
+
+input[type=text]:hover {
+    box-shadow: 0 1px 2px 2px rgba(0,0,0,0.15);
+}
+
+input[type=text]:focus {
+    border-color: #4d90fe;
+    box-shadow: 0 1px 2px 2px rgba(0,0,0,0.15);
+}
+
+#submit, #random {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    outline: 0;
+    color: #444;
+    cursor: pointer;
+    background-color: #fdfdfd;
+    border: 1px solid #A0A0A0;
+    border-radius: 5px;
+    padding: 12.5px 10px;
+    margin-left: 5px;
+    position: relative;
+    top: -3px;
+}
+
+#submit:hover, #random:hover {
+    box-shadow: 0 1px 2px 2px rgba(0,0,0,0.15);
+    color: #111;
+    top: -4px;
+}
+
+.fa {
+    padding-right: 7px;
+}
+
+/*****************************
+     AutoComplete Results
+*****************************/
+
+.autocomplete-results {
+  width: 499px;
+  margin-left: 90px;
+  margin-top: -10px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+	background-color: white;
+  border: 1px solid #a0a0a0;
+  border-top: none;
+  box-shadow: 0 1px 2px 2px rgba(0,0,0,0.15);
+  z-index: 1;
+	position: absolute;
+	display: none;
+}
+
+.auto-results {
+  cursor: pointer;
+  padding: 3px 25px;
+  margin: 0 0;
+}
+
+.auto-results:hover, .selected {
+  background-color: #4d90fe;
+  color: #ededed;
+}
+
+/*****************************
+     Search Results
+*****************************/
+.search-results {
+	width: 800px;
+	margin: auto;
+	margin-top: 25px;
+	margin-bottom: 60px;
+}
+
+.result {
+	background-color: #fff;
+	border: 1px solid #c0c0c0;
+	border-radius: 4px;
+	margin: 10px;
+	box-shadow: 0 1px 2px 2px rgba(0,0,0,0.1);
+	cursor: pointer;
+	padding: 15px;
+    transition: 0.3s;
+}
+
+.result:hover {
+    border: 1px solid #a0a0a0;
+    box-shadow: 0 1px 2px 2px rgba(0,0,0,0.2);
+}
+
+.title {
+    color: #555;
+    margin-bottom: -5px;
+}
+
+.description {
+    color: #333;
+}
